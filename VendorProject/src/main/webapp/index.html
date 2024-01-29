@@ -1,0 +1,157 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="style.css">
+	<title>Login Form</title>
+</head>
+
+<body>
+	<div class="login-container">
+		<form action="http://localhost:9090/VendorProject/login" method="post">
+			<h2>Login</h2>
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<br>
+			<input type="submit" value="Login">
+
+			<a href="NewVendor.html">
+				<input type="button" value="Create New Vendor">
+			</a>
+
+
+		</form>
+	</div>
+</body>
+
+</html>-->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body bgcolor="lightgrey">
+
+	<div class="logincss">
+		<h3> SIGN IN <h3>
+
+				<form action="http://localhost:9090/VendorProject/login" method="post">
+
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required class="text">
+					
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required class="text">
+					<br>
+
+					<a href="http://localhost:9090/VendorProject/login">
+						<input type="submit" name="signin" value="Login" class="button" style="width: 100%;">
+					</a>
+					
+					<h6> Or signin with</h6>
+					<a href="https://www.google.com"> <img src="file:///C:/Users/Priyanka/git/repository4/VendorProject/images/google.png" alt="Google" height="25px"
+							width="25px"></a>
+					
+				</form>
+
+	</div>
+	
+
+	<div class="login1">
+		<br>
+		<h1>Welcome back!</h1>
+		<p>Welcome back! We are so happy to have you here. It's great to see again. We hope you had a safe and enjoyable
+			time away.</p>
+
+		<a href="NewVendor.html">
+			<input type="button" name="signup" value="No account yet? Signup" class="button">
+		</a>
+	</div>
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html>
+<head>
+		<title>Login Page</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body bgcolor="lightgrey">
+
+<form action="http://localhost:9090/VendorProject/Serv1" method="get">
+	
+<div class= "login">
+<h1> Sign in <h1>
+<input type="text" id="person" name="Uname" class="text" placeholder="Username"><br>
+<input type="password" id="pwd" name="pswd" class="text" placeholder="Password"><br>
+
+<input type="button" name="signin" value="Sign in" class="button" style="width: 70%;" onclick="func()">
+
+<input type="button" name="signin" value="Sign in" class="button" style="width: 70%;">
+
+
+<h5> Or signin with</h5>
+<a href="https://www.facebook.com/"> <img src="facebook.png" alt="facebook" height="25px" width="25px"></a>
+<a href="https://www.google.com"> <img src="google.png" alt="Google" height="25px" width="25px"></a>
+<a href="https://www.Linkedin.com"><img src="linkedimage.png" alt="LinkedIn" height="25px" width="25px"></a>
+
+</div>
+
+<div class="login1">
+	<br>
+<h1>Welcome back!</h1>
+<p>Welcome back! We are so happy to have you here. It's great to see again. We hope you had a safe and enjoyable time away.</p>
+
+<input type="button" name="signup" value="No account yet? Signup" class="button">
+</div>
+</form>
+
+<script>
+function func(){
+var email = document.getElementById("person").value;
+var pass = document.getElementById("pwd").value;
+
+if(email == 'priyankakm378@gmail.com' && pass == '123456'){
+	alert("Successfull....!")
+	//window.location.assign("Serv1");
+}
+else{
+	alert("Wrong input");
+}
+
+}
+
+</script>
+
+
+</body>
+</html>-->
