@@ -6,6 +6,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -63,9 +64,21 @@ public class Login extends HttpServlet {
 			
 			if(res.next() == true) {
 				writer.println("<h3>Welcome "+ res.getString(2)+"!<h3>");
-				RequestDispatcher rd = request.getRequestDispatcher("/DisplayVendor");
-				rd.forward(request, response);	
-			
+				System.out.println("vendor list");
+				
+				List<Vendorclass> list = VendorDAO.retrieveVendorListFromDatabase();
+				
+				request.setAttribute("list", list);
+			//  response.sendRedirect(request.getContextPath() + "/VenderList.jsp");
+				RequestDispatcher rd = request.getRequestDispatcher("/VenderList.jsp");
+				rd.forward(request, response);
+				
+				  
+		        for(int i=0;i<list.size();i++){
+		            System.out.println(list.get(i));
+		        } 
+		        		
+					
 			}
 			else {
 				RequestDispatcher rd = request.getRequestDispatcher("/invalidlogin.html");

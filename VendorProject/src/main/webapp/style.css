@@ -1,50 +1,23 @@
-/*body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-}
-
-.login-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-    margin-bottom: 5px;
-}
-
-input {
-    padding: 8px;
-    margin-bottom: 15px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-input[type="submit"] {
-    background-color: #4caf50;
-    color: white;
-    cursor: pointer;
-}
-
-input[type="submit"]:hover {
-    background-color: #45a049;
-}
-
-*/
-
 @charset "ISO-8859-1";
+
+header {
+    background-color: deepskyblue;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+    text-decoration: none;
+}
 
 
 .logincss{
@@ -53,7 +26,7 @@ input[type="submit"]:hover {
 	border: 0.5px solid #ccc;
 	padding:20px;
 	box-sizing: border-box;
-	height: 350px;
+	height: 370px;
 	text-align: center;
 	text-decoration: none;
 	margin-left: 15%;
@@ -78,7 +51,7 @@ label {
 	border: 0.5px solid #ccc;
 	padding: 25px;
 	box-sizing:border-box;
-	height:350px;
+	height:370px;
 	text-align: center;
 	background-color: springgreen;
 	text-decoration: none;
@@ -87,7 +60,7 @@ label {
 }
 
 .button{
-	background-color:seagreen;
+	background-color:rgb(44, 148, 140);
 	border-radius: 10px;
 	padding: 10px;
 	text-align: center;
@@ -103,3 +76,15 @@ label {
 	background-color: lightgray;
 
 }
+
+footer {
+    background-color: deepskyblue;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+

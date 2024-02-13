@@ -2,24 +2,46 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" type="text/css" href="style.css">
 <title>Invalid Login page</title>
 </head>
 <body>
 	
 	<h3>Invalid login details. Please try again!</h3>
-	    <div class="login-container">
-        <form action="http://localhost:9090/VendorProject/index.html" method="post">
-            <h2>Login</h2>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <input type="submit" value="Login">
-        </form>
-    </div>
+	   <div class="logincss" style="box-align: center;">
+		<h3> SIGN IN <h3>
+
+				<form action="http://localhost:9090/VendorProject/index.html" method="post">
+
+					<label for="username">Username:</label>
+					<input type="text" id="username" name="username" required class="text">
+					
+					<label for="password">Password:</label>
+					<input type="password" id="password" name="password" required class="text">
+					<br>
+
+					<a href="http://localhost:9090/VendorProject/login">
+						<input type="submit" name="signin" value="Login" class="button" style="width: 100%;">
+					</a>
+					<h5> Or signin with <a href="https://www.google.com" style="text-decoration: none;"> Google </a></h5>
+					 
+				</form>
+
+	</div>
+	
+	
+	<div class="login1">
+		<br>
+		<h1>Welcome back!</h1>
+		<p>Welcome back! We are so happy to have you here. It's great to see again. We hope you had a safe and enjoyable
+			time away.</p>
+
+		<a href="http://localhost:9090/VendorProject/NewVendor.jsp">
+			<input type="button" name="signup" value="No account yet? Signup" class="button">
+		</a>
+	</div>
+
+	
 
 
 

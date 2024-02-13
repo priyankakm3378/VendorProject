@@ -53,20 +53,15 @@ public class NewVendorServlet extends HttpServlet {
 		String password = request.getParameter("password");
 		String vendorName = request.getParameter("vendorName");
 		int bankAccountNo = Integer.parseInt(request.getParameter("bankAccountNo"));
-		//String AccountNo = request.getParameter("AccountNo");
 		String bankName = request.getParameter("bankName");
 		String addressLine1 = request.getParameter("addressLine1");
 		String addressLine2 = request.getParameter("addressLine2");
 		String city = request.getParameter("city");
 		String country = request.getParameter("country");
 		int zipCode = Integer.parseInt(request.getParameter("zipCode"));
-		//String zipCode = request.getParameter("zipCode");
+		
 
 		try {
-//			if (bankAccountNo != null && zipCode != null) {
-
-//				Integer bankAccountNo = Integer.parseInt(AccountNo);
-//				Integer zipcode = Integer.parseInt(zipCode);
 
 				String query = "INSERT INTO VENDORS(`ACC_NO`,`NAME`,`BANK_NAME`,`ADDRESS1`,`ADDRESS2`,`CITY`,`COUNTRY`,`ZIPCODE`,`USERNAME`,`PASSWORD`) VALUES (?,?,?,?,?,?,?,?,?,?)";
 				pstmt = con.prepareStatement(query);
@@ -95,15 +90,9 @@ public class NewVendorServlet extends HttpServlet {
 				System.out.println("Country: " + country);
 				System.out.println("ZipCode: " + zipCode);
 				
-				writer.println(k + "Records are inserted");
+				writer.println(k + " Records are inserted");
 				System.out.println(k + " Records are inserted.");
 
-//			} else {
-//				writer.println("There was an error processing your request.\n");
-//				writer.println("Please check the provided data and try again.");
-//				System.out.println("There was an error processing your request.");
-//
-//			}
 		} catch (NumberFormatException | SQLException e) {
 
 			e.printStackTrace();

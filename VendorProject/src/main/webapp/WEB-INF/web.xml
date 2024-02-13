@@ -10,12 +10,14 @@
 		<welcome-file>index.jsp</welcome-file>
 		<welcome-file>default.html</welcome-file>
 		<welcome-file>default.htm</welcome-file>
-		<welcome-file>default.jsp</welcome-file> 
- 
-		<welcome-file>index.html</welcome-file>
-		<welcome-file>NewVendor.html</welcome-file>
-		<welcome-file>invalidlogin.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
 		
+		<welcome-file>VenderList.jsp</welcome-file>
+		<welcome-file>EditVendor.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>NewVendor.jsp</welcome-file>
+		<welcome-file>invalidlogin.html</welcome-file>
+
 	</welcome-file-list>
 
 	<servlet>
@@ -27,8 +29,8 @@
 		<servlet-name>Servlet1</servlet-name>
 		<url-pattern>/Serv1</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<servlet>
 		<servlet-name>Login</servlet-name>
 		<servlet-class>com.tap.servlets.Login</servlet-class>
@@ -38,8 +40,8 @@
 		<servlet-name>Login</servlet-name>
 		<url-pattern>/login</url-pattern>
 	</servlet-mapping>
-	
-	
+
+
 	<servlet>
 		<servlet-name>DisplayVendor</servlet-name>
 		<servlet-class>com.tap.servlets.DisplayVendor</servlet-class>
@@ -49,7 +51,7 @@
 		<servlet-name>DisplayVendor</servlet-name>
 		<url-pattern>/display</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>NewVendorServlet</servlet-name>
 		<servlet-class>com.tap.servlets.NewVendorServlet</servlet-class>
@@ -60,6 +62,72 @@
 		<url-pattern>/CreateVendor</url-pattern>
 	</servlet-mapping>
 
+
+	<servlet>
+		<servlet-name>AddVendorServlet</servlet-name>
+		<servlet-class>com.tap.servlets.AddVendorServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddVendorServlet</servlet-name>
+		<url-pattern>/AddVendor</url-pattern>
+	</servlet-mapping>
+
+	
+
+
+	<servlet>
+		<servlet-name>VendorServlet</servlet-name>
+		<servlet-class>com.tap.servlets.VendorServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>VendorServlet</servlet-name>
+		<url-pattern>/VendorsList</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>EditVendorServlet</servlet-name>
+		<servlet-class>com.tap.servlets.EditVendorServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditVendorServlet</servlet-name>
+		<url-pattern>/Edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditDeleteServlet</servlet-name>
+		<servlet-class>com.tap.servlets.EditDeleteServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditDeleteServlet</servlet-name>
+		<url-pattern>/EditDelete</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>DeleteVendorServlet</servlet-name>
+		<servlet-class>com.tap.servlets.DeleteVendorServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>DeleteVendorServlet</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateVendor</servlet-name>
+		<servlet-class>com.tap.servlets.UpdateVendor</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>UpdateVendor</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	
 
 </web-app>
 

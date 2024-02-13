@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<title>Vendor List</title>
+	<link rel="stylesheet" href="style11.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Vendor List</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Vendor Name</th>
+					<th>Bank Account No.</th>
+					<th>Bank Name</th>
+					<th>Edit</th>
+					<th>Delete</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<td>Vendor 1</td>
+					<td>1234567890</td>
+					<td>Bank A</td>
+					<td><a href="EditVendor.jsp" class="edit">Edit</a></td>
+					<td><a href="DeleteVendorServlet?id=1" class="delete">Delete</a></td>
+				</tr>
+
+			</tbody>
+		</table>
+		<div class="pagination">
+			
+			<a href="#" class="prev">&laquo; Previous</a>
+			<a href="#" class="next">Next &raquo;</a>
+		</div>
+	</div>
+
+	<script>
+		function addVendor(vendorName, bankAccountNo, bankName) {
+			var table = document.getElementById("vendorTable").getElementsByTagName('tbody')[0];
+			var newRow = table.insertRow();
+			var cell1 = newRow.insertCell(0);
+			var cell2 = newRow.insertCell(1);
+			var cell3 = newRow.insertCell(2);
+			var cell4 = newRow.insertCell(3);
+			var cell5 = newRow.insertCell(4);
+			cell1.innerHTML = vendorName;
+			cell2.innerHTML = bankAccountNo;
+			cell3.innerHTML = bankName;
+			cell4.innerHTML = '<a href="com.tap.servlets.UpdateVendorServlet" class="edit">Edit</a>';
+			cell5.innerHTML = '<a href="#" class="delete">Delete</a>';
+		}
+	</script>
+</body>
+
+</html>
